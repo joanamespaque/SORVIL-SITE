@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang=”pt-br”>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="css/perfil.css" rel="stylesheet">
+  <title>SORVIL</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="navbar">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <button class="back-bt" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+              <img src="css/img/back.png" class="back-img">
+            </button>
+            <div class="centro-nav">
+              <a class="navbar-sorvil-text" href="indexLogado.html">SORVIL</a>
+              <!-- <a href="#">
+                          <img src="css/img/livro.png" id="livro-img">
+                        </a> -->
+            </div>
+          </div>
+          <div class="navbar-collapse-desk">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="indexLogado.html">Início</a>
+              </li>
+              <li>
+                <a href="editarperfil.html">Editar Perfil</a>
+              </li>
+              <li>
+                <a href="autoresLogado.html">Autores</a>
+              </li>
+              <li>
+                <a href="livrosLogado.html">Livros</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar-collapse">
+            <div class="perfil">
+              <a href="perfil.html">
+                <img src="css/img/perfil-imagem.png" alt="">
+              </a>
+              <div>
+                <a href="perfil.html" id="acesso">Nome Usuário</a>
+              </div>
+            </div>
+            <ul class="nav navbar-nav navmob">
+              <li>
+                <a href="indexLogado.html">Início</a>
+              </li>
+              <li>
+                <a href="editarperfil.html">Editar Perfil</a>
+              </li>
+              <li>
+                <a href="autoresLogado.html">Autores</a>
+              </li>
+              <li>
+                <a href="livrosLogado.html">Livros</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- /.navbar-collapse -->
+        </div>
+      </nav>
+    </div>
+    <div class="caminho">
+      <a href="indexLogado.html">Sorvil</a>
+      <label>> Perfil</label>
+    </div>
+
+    <div class="perfilStyle">
+      <div class="headerPerfil">
+        <div class="fotoInfo">
+          <img src="css/img/perfil-imagem.png">
+          <br>
+          <a href="informacoes.html">Informações</a>
+        </div>
+        <div class="edit">
+          <label>Nome</label>
+          <br>
+          <a href="editarperfil.html">
+            <button>Editar Perfil</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="infos">
+        <h2>Livros</h2>
+        <div class="infoLivro">
+          <label>Lidos</label>
+          <output>
+            0
+          </output>
+        </div>
+        <br>
+        <div class="infoLivro">
+          <label>Lendo</label>
+          <output>
+            0
+          </output>
+        </div>
+        <br>
+        <div class="infoLivro">
+          <label>Quero Ler</label>
+          <output>
+            0
+          </output>
+        </div>
+        <br>
+        <div class="infoLivro">
+          <label>Abandonei</label>
+          <output>
+            0
+          </output>
+        </div>
+        <br>
+        <div class="infoLivro">
+          <span class="glyphicon glyphicon-heart coracao"></span>
+          <label>Favoritos</label>
+          <output>0</output>
+        </div>
+        <br>
+        <div class="infoLivro">
+          <span class="glyphicon glyphicon-star estrela"></span>
+          <label>Avaliados</label>
+          <output>0</output>
+        </div>
+        <br>
+        <h2>Autores</h2>
+        <div class="infoLivro">
+          <span class="glyphicon glyphicon-heart coracao"></span>
+          <label>Favoritos</label>
+          <output>0</output>
+        </div>
+        <br>
+        <div class="infoLivro">
+          <span class="glyphicon glyphicon-star estrela"></span>
+          <label>Avaliados</label>
+          <output>0</output>
+        </div>
+        <div id="estante">
+          <a href="estante.html">Visitar Estante</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

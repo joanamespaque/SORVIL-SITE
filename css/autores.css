@@ -1,0 +1,25 @@
+body{
+    font-family: inherit;
+}
+.caminho{
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    margin-bottom: -55px;
+    margin-top: 65px;
+}
+.autores{
+    margin-left: 10%;
+    width: 90%;
+}
+#autor{
+    margin-bottom: 20px;
+}
+#autor img{
+    width: 140px;
+    height: 180px;
+}
+#autor label{
+    margin-left: 15px;
+}

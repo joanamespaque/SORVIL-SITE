@@ -1,0 +1,36 @@
+body{
+    font-family: inherit;
+    height: 100%;
+    width: 100%;
+}
+.caminho{
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    margin-bottom: -60px;
+    margin-top: 65px;
+}
+.faleConosco{
+    margin-top:70px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+div.faleConosco input{
+    width: 100%;
+    height: 40px;
+}
+div.faleConosco textarea{
+    width: 100%;
+    height: 150px;
+}
+div.faleConosco button{
+    background-color: #30afad;
+    width: 90px;
+    height: 40px;
+    border: none;    
+    font-size: 20px;
+}

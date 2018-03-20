@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang=”pt-br”>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/editarperfil.css" rel="stylesheet">
+    <title>SORVIL</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <button class="back-bt" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+                            <img src="css/img/back.png" class="back-img">
+                        </button>
+                        <div class="centro-nav">
+                            <a class="navbar-sorvil-text" href="indexLogado.html">SORVIL</a>
+                            <!-- <a href="#">
+                          <img src="css/img/livro.png" id="livro-img">
+                        </a> -->
+                        </div>
+                    </div>
+                    <div class="navbar-collapse-desk">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="indexLogado.html">Início</a>
+                            </li>
+                            <li class="active">
+                                <a href="editarperfil.html">Editar Perfil</a>
+                            </li>
+                            <li>
+                                <a href="autoresLogado.html">Autores</a>
+                            </li>
+                            <li>
+                                <a href="livrosLogado.html">Livros</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="navbar-collapse">
+                        <div class="perfil">
+                            <a href="perfil.html">
+                                <img src="css/img/perfil-imagem.png" alt="">
+                            </a>
+                            <div>
+                                <a href="perfil.html" id="acesso">Nome Usuário</a>
+                            </div>
+                        </div>
+                        <ul class="nav navbar-nav navmob">
+                            <li>
+                                <a href="indexLogado.html">Início</a>
+                            </li>
+                            <li class="active">
+                                <a href="editarperfil.html">Editar Perfil</a>
+                            </li>
+                            <li>
+                                <a href="autoresLogado.html">Autores</a>
+                            </li>
+                            <li>
+                                <a href="livrosLogado.html">Livros</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- /.navbar-collapse -->
+                </div>
+            </nav>
+        </div>
+        <div class="caminho">
+            <a href="indexLogado.html">Sorvil</a>
+            <label>></label>
+            <a href="perfil.html">Perfil</a>
+            <label>> Editar Perfil</label>
+        </div>
+
+        <div class="perfilStyle">
+            <div class="headerPerfil">
+                <div class="fotoInfo">
+                    <img src="css/img/perfil-imagem.png">
+                </div>
+                <div class="edit">
+                    <button>Remover Foto</button>
+                    <br>
+                    <button>Fazer Upload</button>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="infoButton">Informações</button>
+                <button id="contaButton">Conta</button>
+            </div>
+            <br>
+            <br>
+            <div class="inputsFormInfo">
+                <div>
+                    <label>Nome</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <br>
+                <div>
+                    <label>Apelido</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <br>
+                <div>
+                    <label>Idade</label>
+                    <br>
+                    <input type="Number">
+                </div>
+                <br>
+                <div>
+                    <label>Twitter</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <br>
+                <div>
+                    <label>Facebook</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <br>
+                <div>
+                    <label>Tumblr</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <br>
+                <div>
+                    <label>Snapchat</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <br>
+                <div>
+                    <label>Instagram</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <br>
+                <div>
+                    <label>Autor Favorito</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <br>
+                <div>
+                    <label>Livro Favorito</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <br>
+                <div>
+                    <label>Personagem Favorito</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <br>
+                <div>
+                    <label>Livraria Favorita</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <br>
+                <div>
+                    <label>Citação Favorita</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <br>
+                <div>
+                    <label>Gênero Favorito</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <br>
+                <div>
+                    <label>Editora Favorita</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <br>
+                <button id="salvar">Salvar</button>
+            </div>
+            <div class="inputsFormConta">
+                <div>
+                    <label>Email</label>
+                    <br>
+                    <input type="email">
+                </div>
+                <br>
+                <div>
+                    <label>Nova Senha</label>
+                    <br>
+                    <input type="password">
+                </div>
+                <br>
+                <div>
+                    <label>Confirmar Nova Senha</label>
+                    <br>
+                    <input type="password">
+                </div>
+                <br>
+                <button id="salvar">Salvar</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/editarperfil.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+body{
+    font-family: inherit;
+}
+.caminho{
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    margin-bottom: -55px;
+    margin-top: 65px;
+}
+div.livros img{
+    width: 120px;
+    height: 170px;
+    margin-bottom: 5px;
+}
+.livros{
+    width: 78%;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.NomeLivro{
+    display: none;
+    width: 90%;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+}
+h3{
+    font-size: 15px;
+    font-family: impact;
+    margin: 0;
+}
