@@ -7,7 +7,7 @@
   "start_url": "https://joanamespaque.github.io/SORVIL-SITE/index.html",
   "icons": [
     {
-      "src": "images/icons/icon-72x72.png",
+      "src": "css/img/icons/icon-72x72.png",
       "sizes": "72x72",
       "type": "image/png"
     },
