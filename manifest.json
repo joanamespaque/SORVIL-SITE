@@ -3,7 +3,7 @@
   "short_name": "SORVIL",
   "theme_color": "#30afad",
   "background_color": "#ffffff",
-  "display": "fullscreen",
+  "display": "minimal-ui",
   "start_url": "https://joanamespaque.github.io/SORVIL-SITE/index.html",
   "icons": [
     {
