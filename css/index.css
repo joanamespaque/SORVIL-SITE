@@ -130,6 +130,7 @@ div.centro-nav a{
 }
 
 .perfil{
+    width: 50%;
     margin-top:10px;
     display:none;
 }
