@@ -1,4 +1,4 @@
-const CACHE_NAME = 'central-controle-robos-v1';
+const CACHE_NAME = 'SORVIL-SITE';
 
 self.addEventListener('install', function (event) {
     event.waitUntil(
