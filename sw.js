@@ -1,4 +1,4 @@
-const CACHE_NAME = 'SORVIL-SITE';
+const CACHE_NAME = 'SORVIL-SITE-v1';
 
 self.addEventListener('install', function (event) {
     event.waitUntil(
