@@ -1,3 +1,4 @@
+const perfil = document.querySelectior('.perfil');
 const menuHamburguer = document.querySelector('.navbar-toggle');
 const back = document.querySelector('.back-bt');
 const navbarMenu = document.querySelector('.navbar-collapse');
