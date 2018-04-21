@@ -19,7 +19,6 @@ self.addEventListener('install', function (event) {
           '/SORVIL-SITE/livros.html',
           '/SORVIL-SITE/manifest.json',
           '/SORVIL-SITE/perfil.html',
-          '/SORVIL-SITE/sw.js',
           '/SORVIL-SITE/js/editarperfil.js',
           '/SORVIL-SITE/js/index.js',
           '/SORVIL-SITE/js/livros.js',
