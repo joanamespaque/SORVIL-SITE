@@ -1,9 +1,10 @@
-const CACHE_NAME = 'SORVIL-SITE';
-
 self.addEventListener('install', function (event) {
-    event.waitUntil(
-        caches.open(CACHE_NAME).then(function (cache) {
-            return cache.addAll([
+  var indexPage = new Request('index.html');
+  event.waitUntil(
+    fetch(indexPage).then(function (response) {
+      caches.open('pwabuilder-offline').then(function (cache) {
+        console.log('[PWA Builder] Cached index page during Install' + response.url);
+        return cache.addAll([
                 '/SORVIL-SITE/',
                 '/SORVIL-SITE/index.html',
                 '/SORVIL-SITE/autores.html',
@@ -63,32 +64,46 @@ self.addEventListener('install', function (event) {
                 '/SORVIL-SITE/css/img/livros/livro11.jpg',
                 '/SORVIL-SITE/css/img/livros/livro12.jpg',
                 '/SORVIL-SITE/css/img/livros/livro13.jpg',
-                '/SORVIL-SITE/css/img/livros/livro14.jpg'
+                '/SORVIL-SITE/css/img/livros/livro14.jpg',
+                '/SORVIL-SITE/bootstrap/css/bootstrap.min.css',
+                '/SORVIL-SITE/bootstrap/css/bootstrap-social.css',
+                '/SORVIL-SITE/bootstrap/css/bootstrap.min.css',
+                '/SORVIL-SITE/bootstrap/js/bootstrap.min.js'
 
-            ])
-        })
-    )
+        ]);
+      });
+    })
+  );
 });
 
-self.addEventListener('activate', function activator(event) {
-    event.waitUntil(
-        caches.keys().then(function (keys) {
-            return Promise.all(keys
-                .filter(function (key) {
-                    return key.indexOf(CACHE_NAME) !== 0;
-                })
-                .map(function (key) {
-                    return caches.delete(key);
-                })
-            );
-        })
-    );
-});
 
+//If any fetch fails, it will look for the request in the cache and serve it from there first
 self.addEventListener('fetch', function (event) {
-    event.respondWith(
-        caches.match(event.request).then(function (cachedResponse) {
-            return cachedResponse || fetch(event.request);
-        })
-    );
-});
+  var updateCache = function (request) {
+    return caches.open('pwabuilder-offline').then(function (cache) {
+      return fetch(request).then(function (response) {
+        console.log('[PWA Builder] add page to offline' + response.url)
+        return cache.put(request, response);
+      });
+    });
+  };
+
+  event.waitUntil(updateCache(event.request));
+
+  event.respondWith(
+    fetch(event.request).catch(function (error) {
+      console.log('[PWA Builder] Network request Failed. Serving content from cache: ' + error);
+
+      //Check to see if you have it in the cache
+      //Return response
+      //If not in the cache, then return error page
+      return caches.open('pwabuilder-offline').then(function (cache) {
+        return cache.match(event.request).then(function (matching) {
+          var report = !matching || matching.status == 404 ? Promise.reject('no-match') : matching;
+          return report
+        });
+      });
+    })
+  );
+})
+
