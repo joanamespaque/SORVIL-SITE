@@ -11,7 +11,6 @@ self.addEventListener('install', function (event) {
           '/SORVIL-SITE/cadastro.html',
           '/SORVIL-SITE/editarperfil.html',
           '/SORVIL-SITE/entrar.html',
-          '/SORVIL-SITE/entrar.html',
           '/SORVIL-SITE/faleconosco.html',
           '/SORVIL-SITE/faleconoscoLogado.html',
           '/SORVIL-SITE/indexLogado.html',
